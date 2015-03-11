@@ -2,25 +2,23 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aurelia • TodoMVC</title>
-    <link rel="stylesheet" type="text/css" href="styles/todomvc-app-css.css">
-    <link rel="stylesheet" type="text/css" href="styles/app.css">
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/fontawesome/css/font-awesome.min.css">
+    <link href="styles/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-    <section id="todoapp" aurelia-app="views/app"></section>
-
-    <footer id="info">
-        <p>Double-click to edit a todo</p>
-        <p>Created by <a href="http://marcelhoyer.de">Marcel Hoyer</a></p>
-        <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-    </footer>
+<body aurelia-app="views/app">
+    <div class="splash">
+        <div class="message">Aurelia Navigation Skeleton</div>
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
 
     <script src="scripts/webcomponentsjs/webcomponents.js"></script>
     <script src="scripts/core-js/client/core.js"></script>
-    <script src="scripts/requirejs/require.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.js"></script>
     <script>
         var origin = window.location.origin;
         var pathname = window.location.pathname;
@@ -30,12 +28,12 @@
             baseUrl: baseUrl,
             paths: {
                 aurelia: baseUrl + "/scripts/aurelia",
-                views: baseUrl + "/views",
                 webcomponentsjs: baseUrl + "/scripts/webcomponentsjs",
-                underscore: baseUrl + "/scripts/underscore/underscore-min"
+                views: baseUrl + "/views",
+                underscore: baseUrl + "/scripts/underscore/underscore.min"
             },
             shim: {
-                "underscore": {
+                underscore: {
                     exports: "_"
                 }
             }
