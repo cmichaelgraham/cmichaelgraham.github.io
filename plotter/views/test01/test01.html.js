@@ -1,1 +1,1 @@
-define('text!app.css', ['module'], function(module) { module.exports = "router-view {\n  flex: 1 0;\n  display: flex;\n  flex-direction: column;\n}\n"; });
+define(['module'], function(module) { module.exports = "<template>\r\n  <h1>test01</h1>\r\n</template>"; });
