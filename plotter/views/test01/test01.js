@@ -1,4 +1,4 @@
-require(["require", "exports"], function (require, exports) {
+require(["exports"], function (exports) {
     var Test01 = (function () {
         function Test01() {};
         return Test01;
