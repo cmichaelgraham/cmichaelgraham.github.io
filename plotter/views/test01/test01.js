@@ -1,4 +1,4 @@
-define('views/test01/test01',["require", "exports"], function (require, exports) {
+define(["require", "exports"], function (require, exports) {
     "use strict";
     var Test01 = (function () {
         function Test01() {
